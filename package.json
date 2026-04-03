@@ -1,0 +1,26 @@
+{
+  "name": "blog-cuina-catalana",
+  "version": "1.0.0",
+  "description": "Lloc web responsive de cuina catalana tradicional , desenvolupat amb Parcel, SCSS i JavaScript.",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html"
+  },
+  "author": "Miquel Xubet",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4",
+    "sass": "^1.69.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.5%",
+    "since 2014"
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
