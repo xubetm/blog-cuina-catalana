@@ -240,6 +240,8 @@ main {
     opacity: 1;
     transform: none;
     background: none;
+    visibility: visible;
+    pointer-events: auto;
 
     ul {
       flex-direction: row;
