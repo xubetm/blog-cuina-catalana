@@ -1,6 +1,7 @@
 {
   "name": "blog-cuina-catalana",
   "version": "1.0.0",
+  "type": "module",
   "description": "Lloc web responsive de cuina catalana tradicional , desenvolupat amb Parcel, SCSS i JavaScript.",
   "scripts": {
     "dev": "parcel src/index.html",
@@ -12,7 +13,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.4",
     "parcel": "^2.16.4",
-    "sass": "^1.69.0"
+    "sass": "^1.69.0",
+    "sharp": "^0.33.5"
   },
   "browserslist": [
     "last 2 versions",

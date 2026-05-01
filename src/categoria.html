@@ -14,7 +14,7 @@
 
         <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
 
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Navegació principal">
           <ul>
             <li><a href="./index.html">Inici</a></li>
             <li><a href="./categoria.html">Receptes</a></li>
@@ -24,7 +24,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <div class="container">
         <section class="welcome">
           <h2 class="animate__animated animate__fadeIn">Totes les receptes</h2>
@@ -34,45 +34,201 @@
           </p>
         </section>
 
-        <!-- Llistat de receptes -->
+        <!-- GRID -->
         <section class="grid">
+          <!-- 🥖 PA AMB TOMÀQUET -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/pa-tomaquet.jpg" alt="Pa amb tomàquet" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/pa-tomaquet-400.avif   400w,
+                  ./img/optimized/pa-tomaquet-800.avif   800w,
+                  ./img/optimized/pa-tomaquet-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/pa-tomaquet-400.webp   400w,
+                  ./img/optimized/pa-tomaquet-800.webp   800w,
+                  ./img/optimized/pa-tomaquet-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/pa-tomaquet-800.jpg"
+                alt="Pa amb tomàquet"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Pa amb tomàquet</h3>
             <p>Un clàssic imprescindible de la cuina catalana.</p>
             <a href="./det1.html">Veure recepta</a>
           </article>
 
+          <!-- 🍮 CREMA CATALANA -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/crema-catalana.jpg" alt="Crema catalana" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/crema-catalana-400.avif   400w,
+                  ./img/optimized/crema-catalana-800.avif   800w,
+                  ./img/optimized/crema-catalana-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/crema-catalana-400.webp   400w,
+                  ./img/optimized/crema-catalana-800.webp   800w,
+                  ./img/optimized/crema-catalana-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/crema-catalana-800.jpg"
+                alt="Crema catalana"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Crema catalana</h3>
             <p>El postre més emblemàtic de tota Catalunya.</p>
             <a href="./det2.html">Veure recepta</a>
           </article>
 
+          <!-- 🫑 ESCALIVADA -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/escalivada.jpg" alt="Escalivada" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/escalivada-400.avif   400w,
+                  ./img/optimized/escalivada-800.avif   800w,
+                  ./img/optimized/escalivada-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/escalivada-400.webp   400w,
+                  ./img/optimized/escalivada-800.webp   800w,
+                  ./img/optimized/escalivada-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/escalivada-800.jpg"
+                alt="Escalivada"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Escalivada</h3>
             <p>Verdures rostides amb un sabor únic exquisit.</p>
             <a href="./det3.html">Veure recepta</a>
           </article>
 
+          <!-- 🍲 ESCUDELLA -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/escudella.jpg" alt="Escudella i carn d'olla" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/escudella-400.avif   400w,
+                  ./img/optimized/escudella-800.avif   800w,
+                  ./img/optimized/escudella-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/escudella-400.webp   400w,
+                  ./img/optimized/escudella-800.webp   800w,
+                  ./img/optimized/escudella-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/escudella-800.jpg"
+                alt="Escudella i carn d'olla"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Escudella i carn d'olla</h3>
             <p>El plat d’hivern més tradicional de Catalunya.</p>
             <a href="#">Veure recepta</a>
           </article>
 
+          <!-- 🍗 POLLASTRE -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/pollastre-rostit.jpg" alt="Pollastre rostit" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/pollastre-rostit-400.avif   400w,
+                  ./img/optimized/pollastre-rostit-800.avif   800w,
+                  ./img/optimized/pollastre-rostit-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/pollastre-rostit-400.webp   400w,
+                  ./img/optimized/pollastre-rostit-800.webp   800w,
+                  ./img/optimized/pollastre-rostit-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/pollastre-rostit-800.jpg"
+                alt="Pollastre rostit"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Pollastre rostit</h3>
             <p>Un rostit clàssic amb aromes de festa major.</p>
             <a href="#">Veure recepta</a>
           </article>
 
+          <!-- 🍝 CANELONS -->
           <article class="animate__animated animate__fadeInUp">
-            <img src="./img/canelons.jpg" alt="Canelons" />
+            <picture>
+              <source
+                srcset="
+                  ./img/optimized/canelons-400.avif   400w,
+                  ./img/optimized/canelons-800.avif   800w,
+                  ./img/optimized/canelons-1200.avif 1200w
+                "
+                type="image/avif"
+              />
+
+              <source
+                srcset="
+                  ./img/optimized/canelons-400.webp   400w,
+                  ./img/optimized/canelons-800.webp   800w,
+                  ./img/optimized/canelons-1200.webp 1200w
+                "
+                type="image/webp"
+              />
+
+              <img
+                src="./img/optimized/canelons-800.jpg"
+                alt="Canelons"
+                loading="lazy"
+              />
+            </picture>
+
             <h3>Canelons</h3>
             <p>Els canelons tradicionals de sempre per Sant Esteve.</p>
             <a href="#">Veure recepta</a>
@@ -86,36 +242,6 @@
         <section class="footer-info">
           <p>© 2026 Sabors de Catalunya</p>
           <p>Blog educatiu de cuina catalana tradicional.</p>
-        </section>
-
-        <section class="footer-links">
-          <h3>Segueix-nos</h3>
-          <ul>
-            <li>
-              <a
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Facebook</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >YouTube</a
-              >
-            </li>
-          </ul>
         </section>
       </div>
     </footer>

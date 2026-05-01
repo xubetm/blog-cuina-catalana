@@ -6,112 +6,163 @@
     <title>Pa amb tomàquet - Sabors de Catalunya</title>
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
+
   <body>
     <header>
-        <div class="container">
-      <h1><a href="./index.html">Sabors de Catalunya</a></h1>
+      <div class="container">
+        <h1><a href="./index.html">Sabors de Catalunya</a></h1>
 
-      <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
+        <button class="menu-toggle" aria-label="Mostrar menú">☰</button>
 
-      <nav class="nav-links">
-        <ul>
-          <li><a href="./index.html">Inici</a></li>
-          <li><a href="./categoria.html">Receptes</a></li>
-          <li><a href="./links.html">Enllaços</a></li>
-        </ul>
-      </nav>
+        <nav class="nav-links" aria-label="Navegació principal">
+          <ul>
+            <li><a href="./index.html">Inici</a></li>
+            <li><a href="./categoria.html">Receptes</a></li>
+            <li><a href="./links.html">Enllaços</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-</div>
-    <div>
-        <div class="container">
-      <article class="recipe-detail">
-        <h2 class="animate__animated animate__fadeIn">Pa amb tomàquet</h2>
 
-        <img
-          src="./img/pa-tomaquet.jpg"
-          alt="Pa amb tomàquet tradicional"
-          class="featured-img"
-        />
+    <main id="main">
+      <div class="container">
+        <article class="recipe-detail">
+          <h2 class="animate__animated animate__fadeIn">Pa amb tomàquet</h2>
 
-        <section class="recipe-content">
-          <div class="recipe-text">
-            <p>
-              El pa amb tomàquet és un dels pilars de la cuina catalana, una recepta tan senzilla com deliciosa. La clau està en utilitzar un bon pa rústic —preferiblement torrat— i un tomàquet ben madur, sucós i aromàtic. Quan aquests ingredients es combinen amb un raig generós d’oli d’oliva verge extra, el resultat és un mos ple de sabor mediterrani.
-            </p>
-            <p>
-              Per preparar-lo, talla el pa a llesques gruixudes i torra’l lleugerament perquè quedi cruixent per fora i tendre per dins. Frega-hi el tomàquet fins que la polpa quedi ben repartida, afegeix un pessic de sal i acaba-ho amb oli d’oliva de qualitat. Si vols potenciar el gust, pots fregar primer un gra d’all tallat per la meitat: donarà un toc intens però equilibrat.
-            </p>
-            <p>
-              El pa amb tomàquet és perfecte com a acompanyament, però també pot convertir-se en un plat complet si hi afegeixes pernil ibèric, formatges curats, anxoves o truita. És ideal per esmorzars, vermuts o sopars informals, i sempre triomfa en trobades familiars. La seva senzillesa permet adaptar-lo a qualsevol ocasió sense perdre l’essència tradicional.
-            </p>
-          </div>
-          
-          <div class="recipe-images">
-            <img
-              src="./img/pa-tomaquet1.jpg"
-              alt="Pa amb tomàquet llest per prendre"
-            />
-            <img src="./img/pa-tomaquet2.jpg" alt="Pa amb tomàquet servit" />
-            <img
-              src="./img/pa-tomaquet3.jpg"
-              alt="Pa amb tomàquet acabat"
-            />
-          </div>
-        </section>
-
-        <!-- Video de YouTube -->
-        <section class="recipe-video">
-          <h3>Vídeo de preparació</h3>
-          <div class="video-container">
-            <iframe
-              src="https://www.youtube.com/embed/zjKJydUmVFY"
-              title="Pa amb tomàquet"
-              frameborder="0"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
+          <!-- 🧠 HERO IMAGE OPTIMIZADA (dirección de arte) -->
+          <picture class="featured-img">
+            <source
+              srcset="
+                ./img/optimized/pa-tomaquet-400.avif   400w,
+                ./img/optimized/pa-tomaquet-800.avif   800w,
+                ./img/optimized/pa-tomaquet-1200.avif 1200w
               "
-              allowfullscreen
-            ></iframe>
-          </div>
-        </section>
-      </article>
-    </div>
+              type="image/avif"
+            />
+
+            <source
+              srcset="
+                ./img/optimized/pa-tomaquet-400.webp   400w,
+                ./img/optimized/pa-tomaquet-800.webp   800w,
+                ./img/optimized/pa-tomaquet-1200.webp 1200w
+              "
+              type="image/webp"
+            />
+
+            <img
+              src="./img/optimized/pa-tomaquet-800.jpg"
+              alt="Pa amb tomàquet tradicional"
+              loading="eager"
+            />
+          </picture>
+
+          <section class="recipe-content">
+            <div class="recipe-text">
+              <p>
+                El pa amb tomàquet és un dels pilars de la cuina catalana...
+              </p>
+
+              <p>Per preparar-lo, talla el pa a llesques gruixudes...</p>
+
+              <p>És perfecte com a acompanyament o com a plat complet...</p>
+            </div>
+
+            <!-- 🖼 GALERÍA OPTIMIZADA -->
+            <div class="recipe-images">
+              <picture>
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet1-400.avif 400w,
+                    ./img/optimized/pa-tomaquet1-800.avif 800w
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet1-400.webp 400w,
+                    ./img/optimized/pa-tomaquet1-800.webp 800w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./img/optimized/pa-tomaquet1-800.jpg"
+                  alt="Pa amb tomàquet preparat"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet2-400.avif 400w,
+                    ./img/optimized/pa-tomaquet2-800.avif 800w
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet2-400.webp 400w,
+                    ./img/optimized/pa-tomaquet2-800.webp 800w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./img/optimized/pa-tomaquet2-800.jpg"
+                  alt="Pa amb tomàquet servit"
+                  loading="lazy"
+                />
+              </picture>
+
+              <picture>
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet3-400.avif 400w,
+                    ./img/optimized/pa-tomaquet3-800.avif 800w
+                  "
+                  type="image/avif"
+                />
+                <source
+                  srcset="
+                    ./img/optimized/pa-tomaquet3-400.webp 400w,
+                    ./img/optimized/pa-tomaquet3-800.webp 800w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  src="./img/optimized/pa-tomaquet3-800.jpg"
+                  alt="Pa amb tomàquet acabat"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+          </section>
+
+          <!-- 🎥 VIDEO -->
+          <section class="recipe-video">
+            <h3>Vídeo de preparació</h3>
+
+            <div class="video-container">
+              <iframe
+                src="https://www.youtube.com/embed/zjKJydUmVFY"
+                title="Pa amb tomàquet"
+                loading="lazy"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </section>
+        </article>
+      </div>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="container">
-      <section class="footer-info">
-        <p>© 2026 Sabors de Catalunya</p>
-        <p>Blog educatiu de cuina catalana tradicional.</p>
-      </section>
-
-      <section class="footer-links">
-        <h3>Segueix-nos</h3>
-        <ul>
-          <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
-              >Facebook</a
-            >
-          </li>
-          <li>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
-              >YouTube</a
-            >
-          </li>
-        </ul>
-      </section></div>
+      <div class="container">
+        <section class="footer-info">
+          <p>© 2026 Sabors de Catalunya</p>
+          <p>Blog educatiu de cuina catalana tradicional.</p>
+        </section>
+      </div>
     </footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
